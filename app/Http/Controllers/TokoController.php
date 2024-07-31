@@ -9,7 +9,6 @@ class TokoController extends Controller
 {
     public function __construct()
     {
-        // Melindungi semua metode kecuali 'index' dan 'show'
         $this->middleware('auth')->except(['index', 'show']);
     }
 
